@@ -1,0 +1,15 @@
+<div>
+  <h1>posts from wordpress!</h1>
+  <ul>
+    <li *ngFor="let post of posts">
+      <p>post title: {{ post.title.rendered }}</p>
+      <p>post content: {{ post.content.rendered }}</p>
+      <p>slug: {{ post.slug }}</p>
+      <p>post id: {{ post.id}}</p>
+      <p>post date: {{ post.date}}</p>
+      <p>post excerpt: {{ post.excerpt.rendered}}</p>
+      <p>post type: {{ post.type}}</p>
+      <p>post status: {{ post.status}}</p>
+    </li>
+  </ul>
+</div>
